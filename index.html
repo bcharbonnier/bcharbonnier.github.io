@@ -24,5 +24,5 @@ During my spare time, at night, I do web development (how surprising!) and woodw
 If you read this entirely until here, you might be interested into my skills. If so you can contact me at benoit.charbonnier@gmail.com.
 </pre>
 <script>
-const o="#"+Math.floor(16777215*Math.random()).toString(16),t=(r=(r=o).replace("#",""),(299*parseInt(r.substr(0,2),16)+587*parseInt(r.substr(2,2),16)+114*parseInt(r.substr(4,2),16))/1e3>=128?"#000":"#fff");var r;document.body.style.color=t,document.body.style.backgroundColor=o
+const{body:o}=document;function t(){const t="#"+Math.floor(16777215*Math.random()).toString(16),r=(n=(n=t).replace("#",""),(299*parseInt(n.substr(0,2),16)+587*parseInt(n.substr(2,2),16)+114*parseInt(n.substr(4,2),16))/1e3>=128?"black":"white");var n;o.style.cssText=`color: ${r};background-color:${t}`}o.querySelectorAll("pre")[0].onclick=t,t()
 </script>
