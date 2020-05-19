@@ -1,14 +1,14 @@
 <link rel=icon> 
-<style>body{font-size:1.2em;line-height:1.3;user-select:none} pre {max-width:1024px;white-space:pre-wrap} pre:first-of-type{font-size: 3rem} u,b{user-select:text}</style>
+<style>body{font-size:1.2em;line-height:1.3;user-select:none} pre {max-width:1024px;white-space:pre-wrap} pre:first-of-type{font-size: 3rem} x-github,x-twitter,u,b{user-select:text}</style>
 
 <pre>Hello!</pre>
 <pre>
-I am <b>Benoit Charbonnier</b>, <age>39yo</age>, husband, dad, and web developer.
+I am <b>Benoit Charbonnier</b>, <x-age>39yo</x-age>, husband, dad, and web developer.
 
-I can be found on the Internet as @<github>bcharbonnier</github> or @<github>benouat</github> on GitHub, as @<twitter>bencharbonnier</twitter> on Twitter and as @<u>bcharbonnier</u> on LinkedIn.
+I can be found on the Internet as @<x-github>bcharbonnier</x-github> or @<x-github>benouat</x-github> on GitHub, as @<twitter>bencharbonnier</twitter> on Twitter and as @<u>bcharbonnier</u> on LinkedIn.
 
-I am working @<github>AmadeusItGroup</github> as front-end principal engineer.
-I spend half my time maintaining the open-source project @<github>ng-bootstrap/ng-bootstrap</github>.
+I am working @<x-github>AmadeusItGroup</x-github> as front-end principal engineer.
+I spend half my time maintaining the open-source project @<x-github>ng-bootstrap/ng-bootstrap</x-github>.
 The other half consist in delivering internal Angular trainings to my peers.
 
 I've been working with web technologies, using HTML, CSS, JavaScript and all their fancy friends.
@@ -19,8 +19,8 @@ Designing, crafting, coding, testing, using, rewriting and maintaining these fra
 I graduated French engineering school ISITV in 2004, with a master degree in Computer Science and Network.
 
 
-Before @<twitter>AmadeusITGroup</twitter>, I worked at @<twitter>AKKAFrance</twitter> as consultant in web technology domains (Java, j2ee, JavaScript).
-And before that, I started my career at @<twitter>airfrance</twitter>, working on airfrance.com.
+Before @<x-twitter>AmadeusITGroup</x-twitter>, I worked at @<x-twitter>AKKAFrance</x-twitter> as consultant in web technology domains (Java, j2ee, JavaScript).
+And before that, I started my career at @<x-twitter>airfrance</x-twitter>, working on airfrance.com.
 Some of my pages might still be online, or at least I like to think so.
 
 During my spare time, I enjoy valuable time with my family, but also do web development (how surprising!) and some woodworking (more surprising!).
@@ -28,5 +28,5 @@ During my spare time, I enjoy valuable time with my family, but also do web deve
 If you are still reading here, it means you might want to ask me more about my skills. If so, please contact me at <b>benoit.charbonnier@gmail.com</b>
 </pre>
 <script>
-function t(t,e){customElements.define(t,class extends HTMLAnchorElement{connectedCallback(){this.href=`https://${e}/${this.textContent}`}})}customElements.define("age",class extends HTMLElement{connectedCallback(){this.textContent=`${(new Date).getFullYear()-1980}yo`}}),t("github","github.com"),t("twitter","twitter.com");const{body:e}=document,o=document.querySelector("body>pre"),n=document.querySelector("head>link[rel=icon]");function c(){const t="#"+Math.floor(16777215*Math.random()).toString(16),o=(c=(c=t).replace("#",""),(299*parseInt(c.substr(0,2),16)+587*parseInt(c.substr(2,2),16)+114*parseInt(c.substr(4,2),16))/1e3>=128?"#000":"#fff");var c;const l=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" font-family="Arial" font-weight="bold" fill="${o}"><path fill="${t}" d="M0 0h100v100H0z" /><text font-size="40" x="95" y="95" text-anchor="end">BC</text></svg>`;return e.style.cssText=`color: ${o};background-color:${t}`,n.href="data:image/svg+xml,"+l.replace(/"/g,"%22").replace(/#/g,"%23"),t}o.onclick=c,console.log("%cHello, want to see how the color changing is done ? contact me: benoit.charbonnier@gmail.com",`font-size: 1rem;font-family:monospace;color:${c()}`)
+function t(t,e){customElements.define(t,class extends HTMLAnchorElement{connectedCallback(){this.href=`https://${e}/${this.textContent}`}})}customElements.define("x-age",class extends HTMLElement{connectedCallback(){this.textContent=`${(new Date).getFullYear()-1980}yo`}}),t("x-github","github.com"),t("x-twitter","twitter.com");const{body:e}=document,o=document.querySelector("body>pre"),n=document.querySelector("head>link[rel=icon]");function c(){const t="#"+Math.floor(16777215*Math.random()).toString(16),o=(c=(c=t).replace("#",""),(299*parseInt(c.substr(0,2),16)+587*parseInt(c.substr(2,2),16)+114*parseInt(c.substr(4,2),16))/1e3>=128?"#000":"#fff");var c;const l=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" font-family="Arial" font-weight="bold" fill="${o}"><path fill="${t}" d="M0 0h100v100H0z" /><text font-size="40" x="95" y="95" text-anchor="end">BC</text></svg>`;return e.style.cssText=`color: ${o};background-color:${t}`,n.href="data:image/svg+xml,"+l.replace(/"/g,"%22").replace(/#/g,"%23"),t}o.onclick=c,console.log("%cHello, want to see how the color changing is done ? contact me: benoit.charbonnier@gmail.com",`font-size: 1rem;font-family:monospace;color:${c()}`)
 </script>
