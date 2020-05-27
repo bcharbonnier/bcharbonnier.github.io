@@ -2,9 +2,12 @@ html {
     font-size: 1.2em;
     font-family: monospace;
     line-height: 1.3;
+    color: black;
+}
+
+body {
     max-width: 800px;
     margin: 4rem auto;
-    color: black;
 }
 
 h2,
@@ -79,6 +82,7 @@ ul.skills li+li {
     margin-left: 0.25em;
 }
 
+
 summary {
     outline: none;
 }
@@ -92,13 +96,33 @@ summary h3 {
     color: grey;
 }
 
+ul li h3 {
+    margin-bottom: .5em;
+    color: grey;
+}
+ul li h3 u {
+    color: black;
+}
+
+ul li .skills {
+    margin-top: .5em;
+}
+
 hr+h2 {
     margin-bottom: 1em;
 }
 
 @media print {
-    html {
+    html, body {
         margin: 0;
+    }
+
+    svg {
+        display: none;
+    }
+
+    a[target][title]::before {
+        content: attr(title);
     }
 
     hr {
@@ -111,9 +135,5 @@ hr+h2 {
 
     details {
         page-break-inside: avoid;
-    }
-
-    section:last-of-type {
-        page-break-before: always;
     }
 }
